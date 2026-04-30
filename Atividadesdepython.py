@@ -4,7 +4,7 @@
 3. peça três números e exiba a media aritimética entre eles.ok
 4. solicite o nome do usuário e mostre qual o tipo de dados esta armazenado ok
 5. crie peçe o valor m dolares e exiba o valor correspondente em reais.
-6. 
+6. crie uma lista com 10 números e exiba a lista com o dobro de cada um dos números
 7. solicite dois números e verifique se o segundo é menor que o primeiro ok
 8. solicite o nome e sobrenome de dois usuários e imprima  o nome do primeiro com o sobrenome do segundo e inversamente ok
 9. peça um número e exiba a metade dele ok
@@ -26,7 +26,7 @@ import time
 
 numm1=float(input("Digite o primeiro número: "))
 numm2=float(input("Digite o segundo número: "))
-res=numm2/numm1
+res=numm1/numm2
 print(f"o resultado da divisão entre os dois números é {res:.2f}")
 
 
@@ -35,8 +35,8 @@ os.system ("cls")
 #NOTE - 2
 print(30*'-', "Convertor de temperatura", 30*'-')
 tempe=float(input("Digite a temperatura em fahrenheit: "))
-
-print(f"A temperatura em celcios é {tempe-32/1.8}")
+celsus=tempe-32/1.8
+print(f"A temperatura em celcios é {celsus:.2f}")
 
 
 time.sleep(5)
@@ -59,10 +59,10 @@ os.system("cls")
 
 nomedousuario=input("Digite o seu nome: ")
 print("olá",nomedousuario)
-print("O tipo de dado amarzenado é",type(nomedousuario))
+print("O tipo de dado amarzenado é string")
 
-time.sleep(5)
-os.system("cls")
+
+
 #NOTE - 5
 dolra = float(input("Digite o valor em dolar: "))
 real = dolra*4.98
@@ -72,15 +72,10 @@ time.sleep(5)
 os.system("cls")
 #NOTE - 6
 
-listanumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista=[1,2,3,4,5,6,7,8,9,10]
+dobro=[v*2 for v in lista]
+print(dobro)
 
-for numero in listanumeros:
-    dobro = numero * 2
-    print(f"O dobro de {numero} é {dobro}")
-
-    
-time.sleep(5)
-os.system("cls")
 #NOTE - 7
 
 nummm1=int(input("Digite um número: "))
@@ -156,9 +151,7 @@ print(f"O produto entre os tres valores é {prd}")
 time.sleep(5)
 os.system ("cls")
 
-
-time.sleep(5)
-os.system("cls")
+# 
 #NOTE - 15
 
 p1=float(input("Digite o valor do produto: ")).replace(",", ".")
