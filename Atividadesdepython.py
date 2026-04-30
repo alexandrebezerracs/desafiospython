@@ -26,7 +26,7 @@ import time
 
 numm1=float(input("Digite o primeiro número: "))
 numm2=float(input("Digite o segundo número: "))
-res=numm1/numm2
+res=numm2/numm1
 print(f"o resultado da divisão entre os dois números é {res:.2f}")
 
 
